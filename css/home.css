@@ -8,14 +8,14 @@
     padding: 0;
 }
 
-body{
-    height:100%;
-}
-
 .wrapper{
     margin: 0 auto;
     padding: 0 4%;
     text-align: center;
+}
+
+body{
+    height:100%;
 }
 
 /*header----------------------------------*/
@@ -75,7 +75,7 @@ body{
 
 
 /*title------------------------------------*/
-#title{
+#title_wrapper{
     position:relative;
     height: 900px;
 }
@@ -83,7 +83,7 @@ body{
 #title_text{
     color:#2F2F2F;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -103,8 +103,20 @@ body{
 
 /*---------------------------------------------*/
 
-#introduce_img{
-    background:url(../img/introduce.jpeg);
-    width:450vmin;
-    height:450vmin;
+/*introduce------------------------------------*/
+#introduce_wrapper{
+    /*position: relative;*/
+    display: flex;
 }
+
+#introduce_img{
+    max-width: 50%;
+    /*position: absolute;*/
+}
+
+#introduce_texts{
+    /*position: absolute;*/
+    display: grid;
+}
+
+/*introduce------------------------------------*/
